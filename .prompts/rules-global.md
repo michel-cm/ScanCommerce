@@ -1,7 +1,3 @@
----
-alwaysApply: true
----
-
 Regras
 
 STACK E FILOSOFIA
