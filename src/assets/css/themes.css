@@ -1,0 +1,82 @@
+/* Theme System - Semantic Tokens */
+/* Reutiliza cores de colors.css sem duplicação */
+
+[data-theme="dark"] {
+  /* Backgrounds */
+  --theme-bg-primary: var(--color-neutral-900);
+  --theme-bg-secondary: var(--color-neutral-800);
+  --theme-bg-tertiary: var(--color-neutral-700);
+  --theme-surface: var(--color-neutral-800);
+  --theme-surface-elevated: var(--color-neutral-700);
+  
+  /* Text */
+  --theme-text-primary: var(--color-neutral-50);
+  --theme-text-secondary: var(--color-neutral-200);
+  --theme-text-tertiary: var(--color-neutral-300);
+  --theme-text-inverse: var(--color-neutral-900);
+  
+  /* Borders */
+  --theme-border-primary: var(--color-neutral-700);
+  --theme-border-secondary: var(--color-neutral-600);
+  --theme-border-subtle: var(--color-neutral-800);
+  
+  /* Interactive States */
+  --theme-hover: var(--color-neutral-700);
+  --theme-active: var(--color-neutral-600);
+  --theme-focus: var(--color-primary-500);
+  
+  /* Overlay */
+  --theme-overlay: var(--color-semantic-overlay);
+}
+
+[data-theme="light"] {
+  /* Backgrounds */
+  --theme-bg-primary: var(--color-neutral-50);
+  --theme-bg-secondary: var(--color-surface-50);
+  --theme-bg-tertiary: var(--color-surface-100);
+  --theme-surface: var(--color-surface-50);
+  --theme-surface-elevated: var(--color-surface-100);
+  
+  /* Text */
+  --theme-text-primary: var(--color-neutral-900);
+  --theme-text-secondary: var(--color-neutral-600);
+  --theme-text-tertiary: var(--color-neutral-500);
+  --theme-text-inverse: var(--color-neutral-50);
+  
+  /* Borders */
+  --theme-border-primary: var(--color-neutral-200);
+  --theme-border-secondary: var(--color-neutral-300);
+  --theme-border-subtle: var(--color-neutral-100);
+  
+  /* Interactive States */
+  --theme-hover: var(--color-surface-200);
+  --theme-active: var(--color-surface-300);
+  --theme-focus: var(--color-primary-500);
+  
+  /* Overlay */
+  --theme-overlay: var(--color-semantic-overlay);
+}
+
+/* Default theme (dark) */
+:root {
+  --theme-bg-primary: var(--color-neutral-900);
+  --theme-bg-secondary: var(--color-neutral-800);
+  --theme-bg-tertiary: var(--color-neutral-700);
+  --theme-surface: var(--color-neutral-800);
+  --theme-surface-elevated: var(--color-neutral-700);
+  
+  --theme-text-primary: var(--color-neutral-50);
+  --theme-text-secondary: var(--color-neutral-200);
+  --theme-text-tertiary: var(--color-neutral-300);
+  --theme-text-inverse: var(--color-neutral-900);
+  
+  --theme-border-primary: var(--color-neutral-700);
+  --theme-border-secondary: var(--color-neutral-600);
+  --theme-border-subtle: var(--color-neutral-800);
+  
+  --theme-hover: var(--color-neutral-700);
+  --theme-active: var(--color-neutral-600);
+  --theme-focus: var(--color-primary-500);
+  
+  --theme-overlay: var(--color-semantic-overlay);
+}
