@@ -1,0 +1,39 @@
+html {
+  touch-action: manipulation;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+:focus-visible:not(input, textarea) {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--color-primary-primary-500);
+  border-radius: 2px;
+}
+
+.column {
+  padding: 0 16px;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1238px;
+  width: 100%;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.ios-mobile input,
+.ios-mobile textarea {
+  font-size: 16px !important;
+}

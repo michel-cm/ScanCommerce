@@ -1,0 +1,13 @@
+<script setup></script>
+
+<template>
+  <main class="home">
+    <h1>Home</h1>
+  </main>
+</template>
+
+<style scoped>
+.home {
+  padding-bottom: 32px;
+}
+</style>

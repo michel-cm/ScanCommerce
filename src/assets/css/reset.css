@@ -1,0 +1,55 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  -webkit-appearance: button;
+  border: none;
+  background: none;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+label,
+button {
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+img,
+a {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-drag: none;
+  user-select: none;
+}
