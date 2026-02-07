@@ -1,0 +1,92 @@
+---
+alwaysApply: true
+---
+
+Regras
+
+STACK E FILOSOFIA
+
+- Vue 3
+- Composition API
+- JavaScript puro (NÃO usar TypeScript)
+- Pinia apenas para estado global real
+- Preferir composables para lógica reutilizável
+- Manter lógica de negócio fora dos componentes sempre que possível
+- Componentes devem ser o mais “burros” possível (UI first)
+
+ARQUITETURA
+
+- Componentes de página apenas orquestram UI e composables
+- Qualquer lógica reutilizável, validação ou regra deve ir para composables
+- Stores (Pinia) só devem existir se houver estado compartilhado entre páginas
+- Não colocar regras de negócio diretamente dentro de <script setup> de páginas
+
+COMPONENTES
+
+- Sempre usar componentes base reutilizáveis
+- É PROIBIDO usar diretamente elementos HTML nativos como:
+  - <button>
+  - <input>
+  - <textarea>
+- Todos os botões devem usar BaseButton
+- Todos os inputs devem usar BaseInput ou BaseTextarea
+- Criar novos componentes base sempre que um padrão se repetir
+
+COMPONENTES BASE (OBRIGATÓRIOS)
+
+- BaseButton
+- BaseInput
+- BaseTextarea
+- BaseCard
+
+REGRAS DOS COMPONENTES BASE
+
+- NÃO conter lógica de negócio
+- Apenas receber props e emitir eventos
+- Estilos devem ser baseados exclusivamente em CSS variables
+- Devem funcionar automaticamente em dark e light mode
+
+COMPOSABLES
+
+- Criar um composable sempre que:
+  - A lógica for reutilizável
+  - A lógica não for puramente visual
+  - Houver regras, validações ou estado
+- Composables devem expor apenas o necessário
+- Exemplo de nomes: useTheme, useScanForm, useFileUpload
+
+CSS E ESTILIZAÇÃO
+
+- Usar CSS variables como base de todo o design
+- NUNCA usar cores hardcoded dentro de componentes
+- Dark e light mode controlados via atributo data-theme no body ou html
+- Estilos devem responder automaticamente à troca de tema
+
+PADRÃO CSS
+
+- Seguir padrão BEM simples:
+  - Bloco: .component
+  - Elemento: .component\_\_element
+  - Modificador: .component--modifier
+- Evitar CSS aninhado excessivo
+- Preferir clareza a abstrações complexas
+
+TEMA (DARK / LIGHT)
+
+- Dark mode como padrão
+- Light mode opcional via toggle
+- Tema persistido via localStorage
+- Tema controlado por CSS variables
+
+BOAS PRÁTICAS
+
+- Código limpo, organizado e legível
+- Evitar duplicação de lógica
+- Pensar sempre em reutilização e escalabilidade
+- Priorizar clareza em vez de “código inteligente”
+
+Ao gerar código:
+
+- Respeite todas as regras acima
+- Gere código consistente com a arquitetura definida
+- Não introduza padrões fora dessas regras
