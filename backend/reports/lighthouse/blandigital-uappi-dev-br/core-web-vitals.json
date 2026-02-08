@@ -1,0 +1,36 @@
+{
+  "mobile": {
+    "scores": {
+      "performance": 63,
+      "accessibility": 97,
+      "seo": 92,
+      "bestPractices": 96
+    },
+    "metrics": {
+      "fcp": 3787,
+      "lcp": 6657,
+      "speedIndex": 6703,
+      "totalBlockingTime": 110,
+      "cls": 0.00010779374945450711
+    }
+  },
+  "desktop": {
+    "scores": {
+      "performance": 69,
+      "accessibility": 97,
+      "seo": 92,
+      "bestPractices": 96
+    },
+    "metrics": {
+      "fcp": 2264,
+      "lcp": 2902,
+      "speedIndex": 2763,
+      "totalBlockingTime": 4,
+      "cls": 0.00002035928673194795
+    }
+  },
+  "reportPaths": {
+    "mobile": "C:\\Users\\Michel\\scan-commerce\\backend\\reports\\lighthouse\\blandigital-uappi-dev-br\\mobile.full.json",
+    "desktop": "C:\\Users\\Michel\\scan-commerce\\backend\\reports\\lighthouse\\blandigital-uappi-dev-br\\desktop.full.json"
+  }
+}

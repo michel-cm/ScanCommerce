@@ -1,5 +1,3 @@
-// engine/lighthouse/types.ts
-
 export type LighthouseCategory =
   | 'performance'
   | 'accessibility'
@@ -19,21 +17,24 @@ export interface LighthouseScores {
   bestPractices: number;
 }
 
-export interface LighthouseRunResult {
-  reportPath: string;
+export interface LighthouseMetrics {
+  fcp: number | null;
+  lcp: number | null;
+  speedIndex: number | null;
+  totalBlockingTime: number | null;
+  cls: number | null;
+}
+
+export interface LighthouseDeviceResult {
   scores: LighthouseScores;
+  metrics: LighthouseMetrics;
 }
 
-export interface CoreWebVitalMetric {
-  value: number;
-  display: string;
-  score: number | null;
-}
-
-export interface CoreWebVitalsResult {
-  lcp: CoreWebVitalMetric;
-  inp: CoreWebVitalMetric;
-  cls: CoreWebVitalMetric;
-  fcp: CoreWebVitalMetric;
-  ttfb: CoreWebVitalMetric;
+export interface LighthouseCoreWebVitalsResult {
+  mobile: LighthouseDeviceResult;
+  desktop: LighthouseDeviceResult;
+  reportPaths: {
+    mobile: string;
+    desktop: string;
+  };
 }

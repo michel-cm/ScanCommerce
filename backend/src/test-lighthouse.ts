@@ -5,5 +5,6 @@ import { runLighthouse } from './engine/lighthouse/run-lighthouse';
     url: 'https://blandigital.uappi.dev.br/',
   });
 
-  console.log(result);
+  console.log('Mobile scores:', result.mobile.scores);
+  console.log('Desktop scores:', result.desktop.scores);
 })();
