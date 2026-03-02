@@ -7,26 +7,26 @@
       "bestPractices": 96
     },
     "metrics": {
-      "fcp": 3787,
-      "lcp": 6657,
-      "speedIndex": 6703,
-      "totalBlockingTime": 110,
-      "cls": 0.00010779374945450711
+      "fcp": 3777,
+      "lcp": 6647,
+      "speedIndex": 6675,
+      "totalBlockingTime": 104,
+      "cls": 0.0001333823740014085
     }
   },
   "desktop": {
     "scores": {
-      "performance": 69,
+      "performance": 67,
       "accessibility": 97,
       "seo": 92,
       "bestPractices": 96
     },
     "metrics": {
-      "fcp": 2264,
-      "lcp": 2902,
-      "speedIndex": 2763,
+      "fcp": 2263,
+      "lcp": 3201,
+      "speedIndex": 3031,
       "totalBlockingTime": 4,
-      "cls": 0.00002035928673194795
+      "cls": 0.000020075458360793267
     }
   },
   "reportPaths": {
