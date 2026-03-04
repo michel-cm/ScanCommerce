@@ -23,6 +23,21 @@ const router = createRouter({
       path: '/report',
       component: () => import('@/views/ViewReport.vue'),
     },
+    {
+      name: 'commercial-dashboard',
+      path: '/commercial',
+      component: () => import('@/views/commercial/CommercialDashboard.vue'),
+    },
+    {
+      name: 'commercial-list',
+      path: '/commercial/list',
+      component: () => import('@/views/commercial/CommercialList.vue'),
+    },
+    {
+      name: 'commercial-detail',
+      path: '/commercial/:id',
+      component: () => import('@/views/commercial/CommercialDetail.vue'),
+    },
   ],
 })
 
